@@ -1,0 +1,66 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #e6ffff;
+}
+
+.container{
+   width: 90%;
+   margin: auto;
+   overflow: hidden;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 17px;
+    font-family: 'Mali', cursive;
+    color: rgba(255, 99, 71, 0.7);
+
+}
+
+.container ul{
+    padding: 0px;
+    margin: 0px;
+    //background: #e6ffff;
+}
+
+
+
+
+.container ul li{
+    float:left;
+    list-style: none;
+    width:20%;
+    height:300px;
+    margin :20px 0px 20px 55px;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: white;
+    padding-bottom: 25%;
+
+}
+.container ul li:hover{
+    opacity: 0.8;
+}
+
+.container ul li .bottom{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    background: rgba(255, 99, 71, 0.5);
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container a {
+  text-decoration: none;
+}

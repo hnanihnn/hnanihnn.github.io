@@ -1,0 +1,77 @@
+body {
+  background: #e6ffff;
+  margin: 0;
+  padding: 0;
+}
+
+
+.sup {
+  color: black;
+  padding: 5px;
+  border: 2px;
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  font-family: 'Mali',cursive;
+  border-radius: 20px;
+  font-size: 18px;
+
+}
+
+h1 {
+  margin-top: 1px;
+  font-family: 'Mali', cursive;
+  color: rgba(255, 99, 71, 0.7);
+  text-align: center;
+  }
+
+  /*  wrapper {
+      background: white;
+      max-width: 968px;
+      margin:0 auto;
+      padding: 20px;
+    }
+
+  .wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+  } */
+
+.support h2{
+    color: white;
+    margin-top: auto;
+    text-align: center;
+    font-family: 'Mali', cursive;
+    background-color: rgba(255, 99, 71, 0.7);
+    padding: 2%;
+    border-radius: 20px;
+
+  }
+
+.support p {
+  color: black;
+  margin: 10px 0;
+  text-align: center;
+  font-family: 'Mali', cursive;
+  font-size: 20px;
+}
+
+.support{
+    float: left;
+    background: white;
+    width: 35%;
+    margin: 2% 5% 5% 8%;
+    padding:1%;
+    height: 450px;
+    border-radius: 20px;
+
+  }
+
+.support a {
+  text-decoration: none;
+}
+  .wrapper img {
+    height: auto;
+    max-width: 100%;
+  }

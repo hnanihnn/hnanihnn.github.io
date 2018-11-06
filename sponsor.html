@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sponsor a Pet!</title>
+    <link rel="shortcut icon" href="pet.png">
+    <link rel="stylesheet" href="sponsor.css">
+    <link rel="stylesheet" href="nav.css">
+    <link href="https://fonts.googleapis.com/css?family=Mali|Patrick+Hand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+          <ul class="nav">
+
+            <div class="logo">
+              <img class="logoedit" src="pet.png" alt="">
+            </div>
+
+            <li><a href="index.html">HOME</a></li>
+            <li class="dropdown">
+              <a class="dropbtn" href="about.html">ABOUT</a>
+                <div class="dropdown-content">
+                  <a href="about.html">OUR STORY</a>
+                  <a href="about.html">FAQs</a>
+                </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="adopt.html">ADOPT</a>
+                <div class="dropdown-content">
+                  <a href="cat.html">CATS</a>
+                  <a href="dog.html">DOGS</a>
+                </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="volunteer.html">SERVICES</a>
+                <div class="dropdown-content">
+                  <a href="volunteer.html">VOLUNTEER</a>
+                  <a href="surrender.html">SURRENDER</a>
+                </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="support.html">SUPPORT</a>
+                <div class="dropdown-content">
+                  <a href="donate.html">DONATE</a>
+                  <a href="sponsor.html">SPONSOR A PET</a>
+                </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="contactus.html">CONTACT US</a>
+                <div class="dropdown-content">
+                  <a href="contactus.html">LOCATION</a>
+                </div>
+            </li>
+          </ul>
+          <div class="banner">
+             <img class="banner-image" style="width: 100%;" src="supportbanner.jpg" alt="">
+           </div>
+</header>
+
+    <div class="sponsor">
+      <h1>Want To Sponsor A Pet?</h1>
+    <p>Wiggling Paws offer a monthly sponsorship program for those animal lovers who cannot bring them home. Sponsors will surely make the animals' lives a lot better!</p>
+    <p>Monthly sponsors are encouraged to visit the shelter regularly for the sponsored animal to be comfortable with you.</p>
+      <p>You can choose whichever pet that you would like to sponsor: <br>
+        <a href="cat.html">Cats</a> or
+        <a href="dog.html">Dogs</a></p>
+  </div>
+
+  <div class="faq">
+    <h1>Sponsorship FAQs</h1>
+  <p><strong> How can I sponsor a specific animal?</strong><br>
+  1. In Person:  Visit us anytime during our operating hours to fill in a sponsorship form.<br>
+ 2. Online:  Scroll down below to fill in and submit the online sponsorship form.</p>
+  <p><strong>How much is the monthly sponsorship fee of an animal?</strong><br>
+   1. Adult Cats and Dogs (above 6 months): RM50.00<br>
+   2. Kittens and Puppies (below 6 months):  RM60.00<br></p>
+  <p><strong>What is my sponsorship fee used for? </strong><br>
+    Your sponsorship fee will be used to purchase your sponsored animal's food and medication, provide for neutering as well as help meet other day-to-day expenses.
+    It will also be pooled to provide assistance and benefit to all our animals and improve the general environment at the shelter.</p>
+    <p><strong>What are the benefits of being a monthly sponsor?</strong><br>
+      Monthly sponsors will receive a personalized certificate and colour picture of your sponsored animal, a letter of appreciation
+      and daily updates on the wellbeing of their sponsored animal.</p>
+</div>
+
+<center>
+
+  <form action="submit.html" method="post">
+
+    <h1>Become a Sponsor!</h1>
+    <input type="text" placeholder="First Name" name="First Name" required>
+    <input type="text" placeholder="Last Name">
+    <input type="tel" placeholder="Contact Number">
+    <input type="email" placeholder="Email">
+
+    Select an animal: &nbsp <select id="names" name="Sponsored">
+
+    <option>Cat - Luna</option>
+    <option>Cat - Chi Chi</option>
+    <option>Cat - Cece</option>
+    <option>Cat - Simba</option>
+    <option>Cat - Oreo</option>
+    <option>Cat - Rocky</option>
+    <option>Cat - Kiki</option>
+    <option>Cat - Anakin</option>
+    <option>Dog - Sadie</option>
+    <option>Dog - Teddy</option>
+    <option>Dog - Charlie</option>
+    <option>Dog - Polo</option>
+    <option>Dog - Rocco</option>
+    <option>Dog - Daisy</option>
+    <option>Dog - Coco</option>
+    <option>Dog - Ella</option>
+
+</select><br><br>
+
+Animal type: <select class="types" name="Sponsored">
+  <option>Adult Cats and Dogs - RM50.00</option>
+  <option>Kittens and Puppies - RM60.00</option>
+
+</select>
+
+    <input type="submit" value="Proceed">
+  </form>
+
+</center>
+
+<footer id="footer">
+  <h4>© 2018 Wiggling Paws Organization. All rights reserved.</h4>
+</footer>
+
+</body>
+</html>

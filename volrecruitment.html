@@ -1,0 +1,138 @@
+<!-- VOLUNTEERING ROLES -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Volunteer Reqruitment Form</title>
+    <link rel="shortcut icon" href="pet.png">
+    <link rel="stylesheet" href="volrecruitment.css">
+    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+    <style>
+      body{
+        background-color: #b3ffd9;
+      }
+    #footer{
+      background-color:#ffffb3;
+      color: black;
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      padding-right: 5%;
+      padding-top: 1%;
+      padding-bottom: 0.5%;
+      position: relative;
+      height: 70px;
+      //margin-top: -100px;
+      clear: both;
+      margin-top: 5%;
+      font-family: 'Mali', cursive;
+    }
+
+    #form-outer, input, #dropdown, #comments{
+      font-family: 'Mali', cursive;
+    }
+
+    </style>
+  </head>
+  <body>
+
+
+    <p id="title2">Volunteer Recruitment Application Form</p>
+    <div id="form-outer">
+    <p id="description">Please complete and submit the form if you are interested in volunteering for Wiggling Paws.</p>
+    <form id="survey-form">
+      <div class="rowTab">
+      <div class="labels">
+      <label id="name-label" for="name">* Full Name:</label>
+    </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name"
+      class="input-field" placeholder="Enter your name" required>
+        </div>
+        </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="email-label" for="email">* Email id:</label>
+        </div>
+        <div class="rightTab">
+          <input type="email" name="email" id="email"
+                 class="input-field" placeholder="Enter your email" required>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="number-label" for="age">*Age(13 or older):</label>
+        </div>
+        <div class="rightTab">
+          <input type="number" name="age" id="number" min="13" max="130" class="input-field" placeholder="Enter your age" required>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="timeOday">Would you prefer to volunteer in the afternoon or evening?</label>
+        </div>
+        <div class="rightTab">
+          <select id="dropdown" name="timeOday" class="dropdown">
+            <option disabled value>Select an option</option>
+            <option value>Afternoon(11am-3pm)</option>
+            <option value>Evening (3pm-7pm)</option>
+          </select>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="whichDay">Which day/days can you work the event?</label>
+        </div>
+        <div class="rightTab">
+          <ul style="list-style">
+          <li class="radio">
+            <label>Monday<input name="radio-buttons" value="1" type="radio" class="whichDay"</label></li>
+              <li class="radio">
+                <label>Wednesday<input name="radio-buttons" value="3" type="radio" class="whichDay"></label></li>
+                <li class="radio">
+                  <label>Thursday<input name="radio-buttons" value="4" type="radio" class="whichDay"</label></li>
+                  <li class="radio">
+                    <label>Friday<input name="radio-buttons" value="5" type="radio" class="whichDay"</label></li>
+                    <li class="radio">
+                      <label>Saturday<input name="radio-buttons" value="6" type="radio" class="whichDay"</label></li>
+                      <li class="radio">
+                        <label>Sunday<input name="radio-buttons" value="7" type="radio" class="whichDay"</label></li>
+              </ul>
+            </div>
+        </div>
+        <div class="rowTab">
+             <div class="labels">
+                  <label for="activities">Please choose volunteering role:</label>
+          </div>
+          <div class="rightTab">
+            <ul id="activities" style="list-style">
+              <li class="checkbox"><label><input name="activity" value="1" type="checkbox">Dog Walker</label></li>
+              <li class="checkbox"><label><input name="activity" value="2" type="checkbox">Animal Bather</li>
+              <li class="checkbox"><label><input name="activity" value="3" type="checkbox">Dog Reading Volunteer</label></li>
+              <li class="checkbox"><label><input name="activity" value="4" type="checkbox">Kitten Socialization Volunteer</label></li>
+              <li class="checkbox"><label><input name="activity" value="5" type="checkbox">Cat Adoption Support</label></li>
+              <li class="checkbox"><label><input name="activity" value="6" type="checkbox">Surgical Prep Assistant</label></li>
+            </ul>
+          </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="comments">Mention the experiences you have in volunteering before</label>
+        </div>
+        <div class="rightTab"><textarea id="comments" class="input-field" name="comment" placeholder="Enter your experiences here..."></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <br>
+
+    <footer id="footer">
+      <h4>© 2018 Wiggling Paws Organization. All rights reserved.</h4>
+    </footer>
+
+
+</body>
+</html>

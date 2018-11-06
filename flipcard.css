@@ -1,0 +1,79 @@
+.flip3D{
+  width: 350px; height: 300px; margin:10px; float: left;
+  padding-top: 3.2%;
+  padding-left: 4.8%;
+  padding-bottom: 5%;
+  padding-right: 2%;
+  float: left;
+}
+
+.flip3D > .front {
+  position: absolute;
+  -webkit-transform: perspective(600px) rotateY(0deg);
+  transform: perspective(600px) rotateY(0deg);
+  width: 400px; height: 300px; border-radius: 7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: -webkit-transform 0.5s linear 0s;
+  transition: transform 0.5s linear 0s;
+  background-color: #ffd9b3;
+  background-size: cover;
+  //border-radius: 50%;
+}
+
+.flip3D > .back {
+  position: absolute;
+  -webkit-transform: perspective(600px) rotateY(180deg);
+  width: 400px; height: 300px; border-radius: 7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: -webkit-transform 0.5s linear 0s;
+  transition: transform 0.5s linear 0s;
+  background-color: #ffd9b3;
+  background-size: cover;
+  //border-radius: 50%;
+}
+
+.flip3D:hover > .front {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip3D:hover > .back {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.front{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Mali', cursive;
+  padding-top: 10px;
+}
+
+#aboutt{
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Mali', cursive;
+  padding: 5px 20px 15px 20px;
+}
+
+.button {
+    background-color: #ff8080;
+    font-family: impact;
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin: 50px 120px 0px 120px;
+    //-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}

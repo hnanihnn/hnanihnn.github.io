@@ -1,0 +1,59 @@
+/* surrender a pet */
+
+body{
+  font-family: 'Mali', cursive;
+}
+
+#title4,#titletext{
+  background-color: rgba(255,99,71,0.7);
+  padding: 35px;
+  color: white;
+  margin-top: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18pt;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  font-family: 'Mali', cursive;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+h1{
+  text-align: center;
+  color: rgba(255,99,71,0.7);
+}
+
+#surrender {
+  color: #000;
+   margin-right: 200px;
+   margin-left: 200px;
+   text-align: center;
+}
+
+.complete1, .complete2, .complete3, .complete4  {
+    background-color:rgb(255,228,196);
+    color: black;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 4em;
+    text-align: center;
+
+  }
+
+  .step1, .step2 , .step3, .step4{
+      color: white;
+      font-weight: bold;
+      border-radius: 4em;
+      padding: 0.3em;
+      margin-left: 200px;
+      margin-right: 200px;
+      background-color: rgba(255,99,71,0.7);
+      margin-top: 0px;
+    }
+
+
+    .process-connector {
+        background-color: rgb(255,228,196);
+        height: 2.8em;
+        margin: auto;
+        width : 15px;
+      }
