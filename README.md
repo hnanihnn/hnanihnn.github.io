@@ -95,3 +95,6 @@ https://www.petwave.com/Cats/Breeds/British-Shorthair/Pictures.aspx
 http://www.malaysiacatclub.com/breed1.html 
 
 - Logo from https://www.flaticon.com/free-icon/pet_489399 
+
+- Banners stock image library from https://www.befunky.com/create/banner-maker/
+
