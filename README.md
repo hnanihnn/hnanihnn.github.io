@@ -45,7 +45,6 @@ Contributions:
 
 Future Enhancements:
 - Complete the forms with javascript
-- Add more cats and dogs to be adopted
 - Add more information about the animals 
 
 
