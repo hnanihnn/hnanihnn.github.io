@@ -14,7 +14,7 @@
           <ul class="nav">
 
             <div class="logo">
-              <img class="logoedit" src="pet.png" alt="">
+            <a href="home.html"><img class="logoedit" src="pet.png" alt=""></a>
             </div>
 
             <li><a href="index.html">HOME</a></li>
@@ -121,7 +121,7 @@
 
 <center>
 <h2 id="sponsorship">Become a Sponsor!</h2>
-  <form action="#" name="myForm" id="myForm" method="post" onsubmit="return false">
+  <form action="#" name="myForm" id="myForm" method="post">
     <h2> Online Sponsorship Form </h2>
     <div class="container">
     <div class="row">
@@ -161,8 +161,8 @@
     <label for="">Select an animal:</label>
   </div>
   <div class="column">
-    <select>
-
+    <select id="select" name="animal" required>
+    <option value="">Choose an option</option>
     <option>Cat - Luna</option>
     <option>Cat - Chi Chi</option>
     <option>Cat - Cece</option>
@@ -189,7 +189,8 @@
    <label for="">Animal type: </label>
    </div>
    <div class="column">
-     <select>
+     <select id="select" name="animal" required>
+  <option value="">Choose an option</option>
   <option>Adult Cats and Dogs (above 1 year) - RM80.00</option>
   <option>Kittens and Puppies (below 1 year) - RM60.00</option>
 
@@ -197,7 +198,7 @@
 </div>
 </div>
 </div>
-<br>
+<br><br><br><br>
     <input id="submit" type="submit" value="Proceed">
   </form>
 </center>
@@ -210,6 +211,7 @@ document.getElementById('myForm').addEventListener('submit', function(event){
         var y = this.lname.value;
         var z = this.email.value;
         var s = this.contact.value;
+        var select = document.getElementById('select'); // or in jQuery use: select = this;
 
         if (x == '') {
           alert("Please enter your first name!");

@@ -14,7 +14,7 @@
         <ul class="nav">
 
           <div class="logo">
-            <img class="logoedit" src="pet.png" alt="">
+            <a href="home.html"><img class="logoedit" src="pet.png" alt=""></a>
           </div>
 
           <li><a href="index.html">HOME</a></li>
@@ -73,7 +73,7 @@
 <center>
 
 <h2 id="title1"> Our Wishlist </h2>
-  <div class="wrap">
+  <div class="wrap" id="wish">
     <table>
   <tr>
     <th>Items</th>
@@ -147,14 +147,14 @@
 </tr>
 </table>
 <br>
-<p><em>*Please scan the bank-in receipt to wigglingpaws@gmail.com for us to issue our official receipt.
+<p><em>*Please scan the bank-in receipt to enquiries-wigglingpaws@gmail.com for us to issue our official receipt.
 Should you need us to mail the physical receipt as well, kindly provide us your mailing address .
 Otherwise, we will just scan and email it to you. </em></p>
 
 </div>
 
 
-  <form action="#"  id="myForm" method="post" onsubmit="return false">
+  <form action="#"  id="myForm" method="post">
     <div class="container">
       <h2>Online Donation Form</h2>
     <div class="row">
@@ -191,11 +191,12 @@ Otherwise, we will just scan and email it to you. </em></p>
 </div>
 <br>
       <div id="radio">
-        <input type="radio" name="time" value="onetime">One-time<br>
-    <input type="radio" name="time" value="monthly">Monthly<br>
-    </div>
 
-<br>
+        <input type="radio" name="time" value="onetime" required>One-time<br>
+      &nbsp
+    <input type="radio" name="time" value="monthly" required>Monthly<br>
+    </div>
+<br><br>
 
     <input id="submit" type="submit" value="Proceed">
 
@@ -226,7 +227,6 @@ document.getElementById('myForm').addEventListener('submit', function(event){
           else {
                 window.location.href = 'donation.html#title1';
               }
-
     });
 
 </script>

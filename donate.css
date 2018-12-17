@@ -38,7 +38,6 @@ body {
 
 
 .wrap {
-
   background: white;
   padding: 5px 20px 10px 20px;
   width: 70%;
@@ -63,7 +62,6 @@ tr:nth-child(even) {
   background-color: rgba(255, 99, 71, 0.2);
 }
 
-
 form {
   margin: 30px;
   width: 70%;
@@ -72,10 +70,9 @@ form {
   border-radius: 20px;
   background-image: url(http://www.centervillepetrescue.org/wp-content/uploads/2018/03/donationboxdog-300x300.jpg);
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 25%;
+  background-position: 610px 400px;
+  background-size: 240px;
 }
-
 
 h1 {
   margin-top: 1px;
@@ -84,18 +81,23 @@ h1 {
   text-align: center;
 }
 
-
-
 input[type="text"] {
   margin-right: 20px;
   margin-bottom: 25px;
-  width:50%;
   border: 2px solid rgba(255, 99, 71, 0.7);
   padding: 10px;
   font-size: inherit;
   margin: auto;
   display: block;
-  width: 40%;
+  width: 50%;
+}
+
+input[type="text"] {
+  margin-right: 20px;
+  display:block;
+  margin-bottom: 25px;
+  width:50%;
+  border: 2px solid rgba(255, 99, 71, 0.7);
 }
 
 input[type="email"]{
@@ -108,14 +110,18 @@ input[type="email"]{
 }
 
 
-
+label {
+  float: left;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-right: 0px;
+}
 
 input {
   padding: 10px;
   font-size: inherit;
   margin: auto;
   display: block;
-  width: 30%;
   border: 2px solid rgba(255, 99, 71, 0.7);
 }
 
@@ -124,31 +130,8 @@ input {
   border: 1px solid gray;
   width: 12%;
   border-radius: 20px;
-
-}
-
-input[type="text"] {
-  margin-right: 20px;
-  display:block;
-  margin-bottom: 25px;
-  width:50%;
-  border: 2px solid rgba(255, 99, 71, 0.7);
-}
-
-input[type="text"] {
-  margin-right: 20px;
-  display:block;
-  margin-bottom: 25px;
-  width:50%;
-  border: 2px solid rgba(255, 99, 71, 0.7);
-}
-
-label {
-  float: left;
-  margin-left: 5%;
-  margin-top: 2%;
-  margin-right: 0px;
-
+  margin-bottom: 20px;
+  margin-top: 0;
 
 }
 
@@ -157,7 +140,6 @@ label {
   vertical-align: middle;
 
 }
-
 
 .container {
   width: 80%;
