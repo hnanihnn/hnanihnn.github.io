@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.section{
+  width: 60%;
+  padding: 3%;
+  margin-left: 17%;
+  //background-color: #ffc78c;
+  border-top: 5px solid #FA8072;
+  border-bottom: 5px solid #FA8072;
+  margin-top: 3%;
+}
+
+.section > #picture {
+  width: 45%;
+}
+
+.info {
+  float: right;
+}
+
+/* Next button */
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ffffb3;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding: 7px;
+  width: 190px;
+  height: 40px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: 'Mali', cursive;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.18);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* SLideshow */
+
+.banner > .mySlides{
+  display:none;
+}
+
+.banner > .picture > img {
+  width: 4000px;
+  height: 565px;
+}
