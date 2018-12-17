@@ -3,91 +3,22 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="nav.css" type="text/css">
+    <link rel="stylesheet" href="about.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
     <title>About us!</title>
     <link rel="shortcut icon" href="pet.png">
   </head>
-  <style media="screen">
 
-    .content{
-      padding: 2% 4% 2% 4%;
-      background-image: url(cat33.jpeg);
-      //background-color: #ffb3ff;
-      border: 1px solid black;
-      margin: 1% 15% 5% 15%;
-      border-radius: 70px 70px 70px 70px;
-      font-family: 'Mali', cursive;
-      font-size: 17px;
-      float:right;
-    }
-
-    .button {
-    background: rgb(251,255,59);
-    background: linear-gradient(90deg, rgba(251,255,59,1) 0%, rgba(84,255,138,1) 41%, rgba(244,181,255,1) 84%);
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    //-webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.button1 {
-    float: none;
-    margin: 2% 10% 2% 24%;
-    //background-color: white;
-    color: black;
-    border: 2px solid #4dff88;
-    width: 50%;
-    font-family: 'Mali', cursive;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.button a{
-  text-decoration: none;
-  color: #002233;
-}
-
-.button1:hover{border-radius: 0px 55px 0px 55px;}
-
-.button1 a:hover {
-    color: black;
-}
-
-.button2 {
-    //background-color: white;
-    color: black;
-    border: 2px solid #4dff88;
-    width: 50%;
-    margin: 2% 10% 2% 24%;
-    font-family: 'Mali', cursive;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.button2:hover{border-radius: 55px 0px 55px 0px;}
-
-.button2 a:hover {
-    color: black;
-}
-
-  </style>
   <body>
     <header>
           <ul class="nav">
 
             <div class="logo">
-              <img class="logoedit" src="pet.png" alt="">
+              <a href="home.html"><img class="logoedit" src="pet.png" alt=""></a>
             </div>
 
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="home.html">HOME</a></li>
             <li class="dropdown">
               <a class="dropbtn" href="about.html">ABOUT</a>
                 <div class="dropdown-content">
@@ -130,39 +61,117 @@
           </div>
     </header>
 
-    <div>
-      <button class="button button1"><a href="#ourstory"> OUR STORY ➤</a></button>
-      <button class="button button2"><a href="#faq"> FREQUENTLY ASKED QUESTONS (FAQs) ➤ </a></button>
-    </div>
+    <!-- our story -->
 
-    <div class="content">
-      <h1 id="ourstory" style="font-family: 'Mali', cursive; font-size:32px; text-align:right; padding-right:5%;">OUR STORY</h1>
-      <p style="text-align:center;">Wiggling Paws society is an animal shelter located in Bangsar has been in operation since 2017. Wiggling Paws is a non-profit organization that provide shelter to animals such as dogs and
-        cats. Our aim is to build a community in which dogs and cats can live free from suffering or cruelty.
-        We focus on providing the best possible welfare for the animals in our care.<br> <br>
-        We strive to provide all aspects of care to abandoned, neglected, and injured animals; reunite lost pets with their caregivers or seek new families for them; reinforce a standard of living for animals and prevent cruelty.
-        The shelter and all costs involved in running it are entirely funded by the generous donations of the public as well as proceeds from charitable events.
+    <h3 id="title">Our Story</h3>
+    <div class="section">
+          <!-- <h3 id="title">Our Story</h3> -->
+
+      <div class="info">
+        <br>
+        <p style="text-align: center; padding: 1% 8% 1% 8%;">
+          <img src="https://img.icons8.com/color/64/000000/dog-house.png">
+          <img src="https://img.icons8.com/color/64/000000/cat.png">
+          <img src="https://img.icons8.com/color/64/000000/dog.png">
+          <img src="https://img.icons8.com/color/64/000000/welfare.png">
+          <br>
+          <br>Wiggling Paws society is an animal shelter located in Bangsar has been in operation since 2017. Wiggling Paws is a non-profit organization that provide shelter to animals such as dogs and
+          cats. Our aim is to build a community in which dogs and cats can live free from suffering or cruelty.
+          We focus on providing the best possible welfare for the animals in our care.<br> <br>
+          We strive to provide all aspects of care to abandoned, neglected, and injured animals; reunite lost pets with their caregivers or seek new families for them; reinforce a standard of living for animals and prevent cruelty.
+          The shelter and all costs involved in running it are entirely funded by the generous donations of the public as well as proceeds from charitable events.
+        </p>
       </p>
+        <br>
+      </div>
+
     </div>
 
-    <div class="content">
-      <h1 id="faq" style="font-family: 'Mali', cursive; font-size:30px; text-align:right; padding-right:5%;">FREQUENTLY ASKED QUESTIONS (FAQs)</h1>
-      <p style="text-align: center;"> <strong>1. What is Wiggling Paws? </strong><br> Wiggling Paws is a non-profit organization that provide shelter to animals such as dogs and
+<!-- FAQ -->
+
+<div class="container">
+
+    <h3 id="title">Frequently Asked Questions (FAQ)</h3>
+
+    <div class="wrap">
+
+      <div class="item">
+        <input id="one" type="checkbox" />
+        <label for="one">+</label><p class="faq1">What is Wiggling Paws?</p>
+      <div class="description">
+      <p> Wiggling Paws is a non-profit organization that provide shelter to animals such as dogs and
         cats. We help to find abandoned cats and dogs their new home.</p>
-      <p style="text-align: center;"> <strong>2. Where is Wiggling Paws located? </strong><br> Wiggling Paws is located at Bangsar.</p>
-      <p style="text-align: center;"> <strong>3. When is the operating hour? </strong><br> We are opened Wednesdays-Mondays from 11am-7pm and we are closed on Tuesdays.</p>
-      <p style="text-align: center;"> <strong>4. Do you accept any animals apart from cats and dogs? </strong><br> No, our animal shelter are specifically for cats and dogs and we do not impose a time limit
-         on an animal’s stay and strive to find new ways to treat animals with medical or behavior problems.</p>
-      <p style="text-align: center;"> <strong>5. What is the adoption process and where can I apply for an adoption? </strong><br> You need to visit our place, choose which one that you wanted to adopt and go
-        for an interview with our staffs. There is no application form that need to be completed before you visit.</p>
-      <p style="text-align: center;"> <strong>6. Where can I apply for volunteer? </strong><br> You need to apply the form at our <a href="volunteer.html">volunteer page</a>
-        or apply normally at our place!</p>
-      <p style="text-align: center;"> <strong>7. How can I make some donation in terms of money or maybe some physical stuffs? </strong><br>
-        You can make the donation at our <a href="donate.html">donate page</a> or you can buy items on our wishlist and deliver it at our doorstep!</p>
+       </div>
+     </div>
+
+     <div class="item">
+       <input id="two" type="checkbox" />
+       <label for="two">+</label><p class="faq2">Where is Wiggling Paws located?</p>
+       <div class="description">
+         <p> Wiggling Paws is located at Bangsar.</p>
+       </div>
     </div>
+
+    <div class="item">
+      <input id="three" type="checkbox" />
+      <label for="three">+</label><p class="faq3">When is the operating hour?</p>
+      <div class="description">
+       <p>We are opened Wednesdays-Mondays from 11am-7pm and we are closed on Tuesdays.</p>
+       </div>
+     </div>
+
+     <div class="item">
+       <input id="four" type="checkbox" />
+       <label for="four">+</label><p class="faq4">Do you accept any animals apart from cats and dogs?</p>
+    <div class="description">
+       <p>  No, our animal shelter are specifically for cats and dogs and we do not impose a time limit
+          on an animal’s stay and strive to find new ways to treat animals with medical or behavior problems.</p>
+    </div>
+    </div>
+
+  <div class="item">
+    <input id="five" type="checkbox" />
+    <label for="five">+</label><p class="faq5"> What is the adoption process and where can I apply for an adoption?</p>
+    <div class="description">
+       <p>You need to visit our place, choose which one that you wanted to adopt and go
+         for an interview with our staffs. There is no application form that need to be completed before you visit.</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <input id="six" type="checkbox" />
+    <label for="six">+</label><p class="faq6"> Where can I apply for volunteer?</p>
+    <div class="description">
+       <p>You need to apply the form at our <a href="volunteer.html">volunteer page</a>
+         or apply normally at our place!</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <input id="seven" type="checkbox" />
+    <label for="seven">+</label><p class="faq7">How can I make some donation in terms of money or maybe some physical stuffs?</p>
+      <div class="description">
+       <p>You can make the donation at our <a href="donate.html">donate page</a> or you can buy items on our wishlist and deliver it at our doorstep!</p>
+     </div>
+
+   </div>
+
+   <div class="item">
+     <input id="eight" type="checkbox" />
+     <label for="eight">+</label><p class="faq8">Do you accept donations of opened food?</p>
+       <div class="description">
+        <p>No. Our shelter animals are on a strict diet so that we can better monitor any health problems.
+          We do not accept opened food. Please visit our <a href="donate.html#wish">wish list</a> for the acceptable items.</p>
+      </div>
+
+    </div>
+
+ </div>
+</div>
 
     <footer id="footer">
-      <h4>© 2018 Wiggling Paws Organization. All rights reserved.</h4>
+      <h4 style="text-align: right;">© 2018 Wiggling Paws Organization. All rights reserved.<br>
+        </h4>
     </footer>
 
   </body>
