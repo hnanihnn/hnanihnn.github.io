@@ -63,7 +63,8 @@
   <div class="donate">
     <h1>Make a Change, Donate To Us Now</h1>
     <p> Help the little ones by donating to us to keep them well fed and taken cared of. </p>
-      <p> You can either bank in your donation to us by filling the form below or
+      <p> You can either bank in your donation to us by <br>filling the form <a href="#myForm">below</a>,
+        through <a href="#direct">direct bank in</a> or
         you can buy the items off our wishlist and deliver them straightly to our doorstep:<br>
     <strong>  1, Jalan Telawi 1, Bangsar Baru, 59100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur.</strong></p>
         Your generosity is very much appreciated!</p>
@@ -71,9 +72,8 @@
 
 <center>
 
-
-  <div class="tbl">
-    <h1> Our Wishlist </h1>
+<h2 id="title1"> Our Wishlist </h2>
+  <div class="wrap">
     <table>
   <tr>
     <th>Items</th>
@@ -106,7 +106,6 @@
   <tr>
     <td>Towels and blankets</td>
     <td>To provide comfort for the animals</td>
-
   </tr>
   </table>
 
@@ -114,29 +113,127 @@
 
 
 
-  <form action="proceed.html" method="post">
+<h2 id="title1">Donate Now</h2>
+
+<div class="wrap" id="direct">
+  <h2><center>Direct Bank In</center></h2>
+  <table>
+<tr>
+  <th>Field</th>
+  <th>Property</th>
+</tr>
+<tr>
+  <td>Account Number</td>
+  <td>CIMB 82021700113</td>
+</tr>
+<tr>
+  <td>Account Holder</td>
+  <td>Wiggling Paws Organization</td>
+</tr>
+<tr>
+  <td>Bank Name</td>
+  <td>CIMB Bank Berhad</td>
+</tr>
+<tr>
+  <td>Bank Branch Address</td>
+  <td>CIMB Bank Berhad, <br>
+    138, Jalan Burhannuddin Helmi, <br>
+    Taman Tun Dr. Ismail, <br>
+     60000 Kuala Lumpur, Wilayah Persekutuan, Malaysia.</td>
+</tr>
+<tr>
+  <td>Swift Code</td>
+  <td>CIBBMYKL</td>
+</tr>
+</table>
+<br>
+<p><em>*Please scan the bank-in receipt to wigglingpaws@gmail.com for us to issue our official receipt.
+Should you need us to mail the physical receipt as well, kindly provide us your mailing address .
+Otherwise, we will just scan and email it to you. </em></p>
+
+</div>
 
 
-    <h1>Donation Information </h1> <br>
-    <input type="text" placeholder="First Name" required>
-    <input type="text" placeholder="Last Name" required>
-    <input type="email" placeholder="Email" required>
-    <input type="text" placeholder="Amount(RM)" required>
-
-      <div><input type="radio" name="time">One-time &nbsp
-      <input type="radio" name="time">Monthly</div>
+  <form action="#"  id="myForm" method="post" onsubmit="return false">
+    <div class="container">
+      <h2>Online Donation Form</h2>
+    <div class="row">
+      <div class="column">
+    <label for="fname">First Name</label>
+  </div>
+  <div class="column">
+    <input type="text" placeholder="Enter your first name" name="fname">
+  </div>
+ </div>
+ <div class="row">
+   <div class="column">
+     <label for="lname">Last Name</label>
+   </div>
+   <div class="column">
+    <input type="text" placeholder="Enter your last name" name="lname">
+  </div>
+</div>
+<div class="row">
+ <div class="column">
+   <label for="email">Email Address</label>
+ </div>
+ <div class="column">
+    <input type="email" placeholder="Enter your email" name="email">
+</div>
+</div>
+<div class="row">
+ <div class="column">
+   <label for="don">Donation Amount</label>
+ </div>
+ <div class="column">
+    <input type="text" name="don" placeholder="RM">
+</div>
+</div>
+<br>
+      <div id="radio">
+        <input type="radio" name="time" value="onetime">One-time<br>
+    <input type="radio" name="time" value="monthly">Monthly<br>
+    </div>
 
 <br>
 
-    <input type="submit" value="Proceed">
+    <input id="submit" type="submit" value="Proceed">
 
   </form>
 
 </center>
+<script>
+document.getElementById('myForm').addEventListener('submit', function(event){
+        // this line prevents the normal behaviour of the form (ie: reloading the page with form data sent as POST data)
+        event.preventDefault();
+        var x = this.fname.value;
+        var y = this.lname.value;
+        var z = this.email.value;
+        var s = this.don.value;
+
+        if (x == '') {
+          alert("Please enter your first name!");
+        }
+          else if (y == '') {
+            alert("Please enter your last name!");
+          }
+          else if (z =='') {
+            alert("Please enter your email!");
+          }
+          else if (s == '') {
+            alert("Please enter your donation amount!");
+          }
+          else {
+                window.location.href = 'donation.html#title1';
+              }
+
+    });
+
+</script>
+</body>
 
 <footer id="footer">
   <h4>© 2018 Wiggling Paws Organization. All rights reserved.</h4>
 </footer>
 
-</body>
 </html>
