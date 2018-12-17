@@ -5,17 +5,18 @@ body{
 }
 
 #title4,#titletext, #title{
-  background-color: rgba(255,99,71,0.7);
-  padding: 35px;
+    background-color: #FA8072;
+  padding: 25px;
+  width: 85%;
+  margin-left: 4%;
+  margin-right: 4%;
   color: white;
-  margin-top: 1%;
+  margin-bottom: 0;
   text-align: center;
   font-weight: bold;
   font-size: 18pt;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-  margin-left: 22%;
-  margin-right: 22%;
- }
+}
 
 h1{
   text-align: center;
