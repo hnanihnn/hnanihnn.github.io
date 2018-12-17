@@ -31,7 +31,7 @@ body {
 
 form {
   margin: 30px;
-  width: 57%;
+  width: 60%;
   background-color: white;
   padding: 25px 20px 20px 20px;
   border-radius: 20px;
@@ -42,13 +42,13 @@ form {
   background-image: url(https://faaspets.org/wp-content/uploads/FAAS-logo-no-background.jpg);
   background-repeat: no-repeat;
   background-size: 160px;
-  background-position: 580px 450px;
+  background-position: 600px 455px;
 }
 
 #title1, #sponsorship{
   background-color: #FA8072;
   padding: 25px;
-  width: 55%;
+  width: 60%;
   margin-left: 21.5%;
   color: white;
   margin-bottom: 0;
@@ -128,7 +128,7 @@ label {
 
 .wrap{
         background-color:white;
-        width:48%;
+        width:51%;
         padding:2em 2em 2em;
         margin:0 auto;
         border-radius:2em;
@@ -144,19 +144,17 @@ label {
         padding:3px;
       }
 
-.item .description{
+      .item .description{
         clear:both;
         overflow:hidden;
         max-height:0;
         transition:0.5s ease;
         color:darkorange;
       }
-
-.item input[type=checkbox]{
+      .item input[type=checkbox]{
         display:none;
       }
-
-.item input[type=checkbox] ~ label{
+      .item input[type=checkbox] ~ label{
         display:block;
         float:right;
         width:2em;
@@ -169,14 +167,13 @@ label {
         font-weight:bold;
         cursor:pointer;
       }
-
-.item input[type=checkbox] ~ label:hover{
+      .item input[type=checkbox] ~ label:hover{
         background:cyan;
       }
 
-.item input[type=checkbox]:checked ~ .description{
-    max-height:200em;
-    transition:0.5s ease;
+      .item input[type=checkbox]:checked ~ .description{
+        max-height:200em;
+        transition:0.5s ease;
 
       }
 
