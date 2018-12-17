@@ -67,33 +67,101 @@
         <a href="dog.html">Dogs</a></p>
   </div>
 
-  <div class="faq">
-    <h1>Sponsorship FAQs</h1>
-  <p><strong> How can I sponsor a specific animal?</strong><br>
-  1. In Person:  Visit us anytime during our operating hours to fill in a sponsorship form.<br>
- 2. Online:  Scroll down below to fill in and submit the online sponsorship form.</p>
-  <p><strong>How much is the monthly sponsorship fee of an animal?</strong><br>
-   1. Adult Cats and Dogs (above 6 months): RM50.00<br>
-   2. Kittens and Puppies (below 6 months):  RM60.00<br></p>
-  <p><strong>What is my sponsorship fee used for? </strong><br>
-    Your sponsorship fee will be used to purchase your sponsored animal's food and medication, provide for neutering as well as help meet other day-to-day expenses.
-    It will also be pooled to provide assistance and benefit to all our animals and improve the general environment at the shelter.</p>
-    <p><strong>What are the benefits of being a monthly sponsor?</strong><br>
-      Monthly sponsors will receive a personalized certificate and colour picture of your sponsored animal, a letter of appreciation
-      and daily updates on the wellbeing of their sponsored animal.</p>
+<center><h2 id="title1">Sponsorship FAQs</h2></center>
+<br><br>
+  <div class="wrap">
+
+
+<div class="item">
+<input id="one" type="checkbox" />
+<label for="one">+</label><p class="faq1">How can I sponsor a specific animal?</p>
+  <div class="description">
+    <p>> In Person:  Visit us anytime during our operating hours to fill in a sponsorship form.<br>
+       > Online:  Scroll down below to fill in and submit the online sponsorship form.</p></div>
 </div>
 
+<div class="item">
+<input id="two" type="checkbox" />
+<label for="two">+</label><p class="faq2">How much is the monthly sponsorship fee of an animal?</p>
+  <div class="description">
+     <p>> Adult Cats and Dogs (above 1 year): RM80.00<br>
+     > Kittens and Puppies (below 1 year):  RM60.00</p></div>
+</div>
+
+<div class="item">
+<input id="three" type="checkbox" />
+<label for="three">+</label><p class="faq3">What is my sponsorship fee used for? </p>
+  <div class="description">
+     <p> Your sponsorship fee will be used to purchase your sponsored animal's food and medication, provide for neutering as well as help meet other day-to-day expenses.
+     It will also be pooled to provide assistance and benefit to all our animals and improve the general environment at the shelter.</p>
+  </div>
+</div>
+
+<div class="item">
+<input id="four" type="checkbox" />
+<label for="four">+</label><p class="faq4">What are the benefits of being a monthly sponsor?</p>
+  <div class="description">
+     <p> Monthly sponsors will receive a personalized certificate and colour picture of your sponsored animal, a letter of appreciation
+     and daily updates on the wellbeing of their sponsored animal.</p>
+  </div>
+</div>
+
+<div class="item">
+<input id="five" type="checkbox" />
+<label for="five">+</label><p class="faq5">How often can I visit my sponsored animal?</p>
+  <div class="description">
+     <p>You can visit them as many times as you like during our operational hours.
+       We encourage sponsors to spend a lot of time with the animals so that they can have company.</p>
+  </div>
+</div>
+
+
+</div>
+<br><br>
+
 <center>
-
-  <form action="submit.html" method="post">
-
-    <h1 id="sponsorship">Become a Sponsor!</h1>
-    <input type="text" placeholder="First Name" name="First Name" required>
-    <input type="text" placeholder="Last Name">
-    <input type="tel" placeholder="Contact Number">
-    <input type="email" placeholder="Email">
-
-    Select an animal: &nbsp <select id="names" name="Sponsored">
+<h2 id="sponsorship">Become a Sponsor!</h2>
+  <form action="#" name="myForm" id="myForm" method="post" onsubmit="return false">
+    <h2> Online Sponsorship Form </h2>
+    <div class="container">
+    <div class="row">
+      <div class="column">
+    <label for="fname">First Name</label>
+  </div>
+  <div class="column">
+    <input id="fname" name="fname" placeholder="Enter your last name" type="text">
+  </div>
+ </div>
+ <div class="row">
+   <div class="column">
+     <label for="lname">Last Name</label>
+   </div>
+   <div class="column">
+    <input id="lname" name="lname" placeholder="Enter your last name" type="text">
+  </div>
+</div>
+<div class="row">
+ <div class="column">
+   <label for="number">Contact Number</label>
+ </div>
+ <div class="column">
+    <input id="contact" name="contact" placeholder="Enter your contact number" type="tel">
+</div>
+</div>
+<div class="row">
+ <div class="column">
+   <label for="number">Email Address</label>
+ </div>
+ <div class="column">
+  <input id="email" name="email" placeholder="Enter your email" type="email">
+</div>
+</div>
+<div class="row">
+ <div class="column">
+    <label for="">Select an animal:</label>
+  </div>
+  <div class="column">
+    <select>
 
     <option>Cat - Luna</option>
     <option>Cat - Chi Chi</option>
@@ -112,22 +180,59 @@
     <option>Dog - Coco</option>
     <option>Dog - Ella</option>
 
-</select><br><br>
+</select>
+</div>
+</div>
 
-Animal type: <select class="types" name="Sponsored">
-  <option>Adult Cats and Dogs - RM50.00</option>
-  <option>Kittens and Puppies - RM60.00</option>
+<div class="row">
+ <div class="column">
+   <label for="">Animal type: </label>
+   </div>
+   <div class="column">
+     <select>
+  <option>Adult Cats and Dogs (above 1 year) - RM80.00</option>
+  <option>Kittens and Puppies (below 1 year) - RM60.00</option>
 
 </select>
-
-    <input type="submit" value="Proceed">
+</div>
+</div>
+</div>
+<br>
+    <input id="submit" type="submit" value="Proceed">
   </form>
-
 </center>
 
+<script>
+document.getElementById('myForm').addEventListener('submit', function(event){
+        // this line prevents the normal behaviour of the form (ie: reloading the page with form data sent as POST data)
+        event.preventDefault();
+        var x = this.fname.value;
+        var y = this.lname.value;
+        var z = this.email.value;
+        var s = this.contact.value;
+
+        if (x == '') {
+          alert("Please enter your first name!");
+        }
+          else if (y == '') {
+            alert("Please enter your last name!");
+          }
+          else if (z =='') {
+            alert("Please enter your email!");
+          }
+          else if (s == '') {
+            alert("Please enter your contact number!");
+          }
+          else {
+                window.location.href = 'sponsorship.html#title1';
+              }
+
+    });
+</script>
+
+</body>
 <footer id="footer">
   <h4>© 2018 Wiggling Paws Organization. All rights reserved.</h4>
 </footer>
 
-</body>
 </html>

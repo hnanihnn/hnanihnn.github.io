@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Support a Pet!</title>
+    <link rel="shortcut icon" href="pet.png">
+    <link rel="stylesheet" href="sponsor.css">
+    <link rel="stylesheet" href="nav.css">
+    <link href="https://fonts.googleapis.com/css?family=Mali|Patrick+Hand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  </head>
+  <body >
+    <header>
+          <ul class="nav">
+
+            <div class="logo">
+              <img class="logoedit" src="pet.png" alt="">
+            </div>
+
+            <li><a href="index.html">HOME</a></li>
+            <li class="dropdown">
+              <a class="dropbtn" href="about.html">ABOUT</a>
+                <div class="dropdown-content">
+                  <a href="about.html">OUR STORY</a>
+                  <a href="about.html">FAQs</a>
+                </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="adopt.html">ADOPT</a>
+                <div class="dropdown-content">
+                  <a href="cat.html">CATS</a>
+                  <a href="dog.html">DOGS</a>
+                </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="volunteer.html">SERVICES</a>
+                <div class="dropdown-content">
+                  <a href="volunteer.html">VOLUNTEER</a>
+                  <a href="surrender.html">SURRENDER</a>
+                </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="support.html">SUPPORT</a>
+                <div class="dropdown-content">
+                  <a href="donate.html">DONATE</a>
+                  <a href="sponsor.html">SPONSOR A PET</a>
+                </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="contactus.html">CONTACT US</a>
+                <div class="dropdown-content">
+                  <a href="contactus.html">LOCATION</a>
+                </div>
+            </li>
+          </ul>
+          <div class="banner">
+             <img class="banner-image" style="width: 100%;" src="supportbanner.jpg" alt="">
+           </div>
+
+           <style>
+
+           #title1{
+             background-color: rgba(255,99,71,0.7);
+             padding: 35px;
+             width: 85%;
+             margin-left: 4%;
+             margin-right: 4%;
+             color: white;
+             margin-bottom: 0;
+             text-align: center;
+             font-weight: bold;
+             font-size: 18pt;
+             text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+           }
+
+           center{
+             margin-left: 7%;
+             margin-right: 7%;
+           }
+
+           .container {
+             width: 85%;
+           }
+
+           label {
+             float: left;
+             margin-left: 5%;
+             margin-top: 2%;
+             margin-right: 0px;
+           }
+           .column {
+             margin-top: 5%;
+             vertical-align: middle;
+           }
+
+           input {
+             padding: 10px;
+             font-size: inherit;
+             margin: auto;
+             display: block;
+             width: 30%;
+             border: 2px solid rgba(255, 99, 71, 0.7);
+           }
+
+           #submit {
+             cursor: pointer;
+             border: 1px solid gray;
+             width: 12%;
+             border-radius: 20px;
+           }
+
+           form {
+             width: 70%;
+           }
+
+             </style>
+</header>
+<center>
+
+<p id="title1">Payment Information</p>
+
+  <form action="#"  method="post" onsubmit="return false">
+    <div class="container">
+        <h3>Billing Address</h3>
+        <div class="row">
+          <div class="column">
+        <label for="add">Street Address</label>
+      </div>
+      <div class="column">
+        <input id="add" name="add" placeholder="Street Address Line 1" type="text">
+      </div>
+      <div class="row">
+      <div class="column">
+        <input name="add1" placeholder="Street Address Line 2" type="text" >
+      </div>
+    </div>
+      </div>
+      <div class="row">
+       <div class="column">
+         <label for="state">State</label>
+       </div>
+       <div class="column">
+        <input id="state" name="state" placeholder="Enter your state" type="text" >
+      </div>
+      </div>
+      <div class="row">
+      <div class="column">
+       <label for="country">Enter your Country</label>
+      </div>
+      <div class="column">
+        <input id="country" name="country" placeholder="Country" type="text" >
+      </div>
+      </div>
+      <div class="row">
+      <div class="column">
+       <label for="zip">Enter your ZIP Code</label>
+      </div>
+      <div class="column">
+      <input id="zip" name="zip" placeholder="Enter your zipcode" type="text" maxlength="6">
+      </div>
+      </div>
+          <br>
+
+
+            <h3>Card Details</h3>
+            <center><img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png" height="40px"></center>
+            <br>
+            <div class="row">
+              <div class="column">
+            <label for="cname">Name on card</label>
+          </div>
+          <div class="column">
+            <input id="cname" name="cname" placeholder="Enter your name on card" type="text">
+          </div>
+         </div>
+         <div class="row">
+           <div class="column">
+             <label for="cnum">Credit Card Number</label>
+           </div>
+           <div class="column">
+            <input id="cnum" name="cnum" placeholder="---- ---- ----" type="text">
+          </div>
+        </div>
+        <div class="row">
+         <div class="column">
+           <label for="expmo">Exp Month</label>
+         </div>
+         <div class="column">
+            <input id="expmo" name="expmo" placeholder="MM" type="text">
+        </div>
+        </div>
+        <div class="row">
+         <div class="column">
+           <label for="expyear">Exp Year</label>
+         </div>
+         <div class="column">
+          <input id="expyear" name="expyear" placeholder="YY" type="text" maxlength="2">
+        </div>
+        </div>
+        <div class="row">
+         <div class="column">
+           <label for="cv">CVV</label>
+         </div>
+         <div class="column">
+          <input id="cv" name="cv" placeholder="---" type="text" max="4" min="3">
+        </div>
+        </div>
+            </div>
+            <br>
+        <input id="submit" type="submit" value="submit" onclick="myForm()">
+      </form>
+
+</center>
+<script>
+function myForm() {
+        // this line prevents the normal behaviour of the form (ie: reloading the page with form data sent as POST data)
+        var x = document.getElementById("add").value;
+        var y = document.getElementById("state").value;
+        var z = document.getElementById("country").value;
+        var s = document.getElementById("zip").value;
+        var t = document.getElementById("cname").value;
+        var u = document.getElementById("cnum").value;
+        var v = document.getElementById("expmo").value;
+        var w = document.getElementById("expyear").value;
+        var a = document.getElementById("cv").value;
+
+        if (x == '') {
+          alert("Please enter your street address!");
+        }
+          else if (y == '') {
+            alert("Please enter your state!");
+          }
+          else if (z =='') {
+            alert("Please enter your country!");
+          }
+          else if (s == '') {
+            alert("Please enter your zipcode!");
+          }
+          else if (t == '') {
+            alert("Please enter your name on the card!");
+          }
+          else if (u == '' ) {
+            alert("Please enter your card number!");
+          }
+          else if (v == '' ) {
+            alert("Please enter expiry month!");
+          }
+          else if (w == '' ) {
+            alert("Please enter expiry year");
+          }
+          else if (a == '' ) {
+            alert("Please enter cvv");
+          }
+          else
+              alert("Thank you for becoming one of Wiggling Paws family!")
+    }
+</script>
+
+
+</body>
+<footer id="footer">
+  <h4>© 2018 Wiggling Paws Organization. All rights reserved.</h4>
+</footer>
+
+</html>
