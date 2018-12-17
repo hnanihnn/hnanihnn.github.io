@@ -8,7 +8,7 @@ center{
   padding: 5px;
   text-align: center;
   margin: auto;
-  width: 60%;
+  width: 55%;
   font-family: 'Mali',cursive;
   font-size: 18px;
   margin-bottom: 2%;
@@ -18,7 +18,7 @@ center{
 h1 {
   margin-top: 1px;
   font-family: 'Mali', cursive;
-  color: rgba(255, 99, 71, 0.7);
+  color: #FA8072;
   text-align: center;
 }
 
@@ -31,7 +31,7 @@ body {
 
 form {
   margin: 30px;
-  width: 68%;
+  width: 57%;
   background-color: white;
   padding: 25px 20px 20px 20px;
   border-radius: 20px;
@@ -41,22 +41,22 @@ form {
 #myForm {
   background-image: url(https://faaspets.org/wp-content/uploads/FAAS-logo-no-background.jpg);
   background-repeat: no-repeat;
-  background-size: 180px;
-  background-position: 665px 445px;
+  background-size: 160px;
+  background-position: 580px 450px;
 }
 
 #title1, #sponsorship{
-  background-color: rgba(255,99,71,0.7);
-  padding: 35px;
-  width: 85%;
-  margin-left: 4%;
-  margin-right: 4%;
+  background-color: #FA8072;
+  padding: 25px;
+  width: 55%;
+  margin-left: 21.5%;
   color: white;
   margin-bottom: 0;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  margin:0 auto;
 }
 
 select {
@@ -128,7 +128,7 @@ label {
 
 .wrap{
         background-color:white;
-        width:50em;
+        width:48%;
         padding:2em 2em 2em;
         margin:0 auto;
         border-radius:2em;
@@ -138,24 +138,25 @@ label {
 
 .item{
       border-top:solid 3px #FA8072;
-      border-bottom:solid 1px;
       }
 
       .faq1, .faq2, .faq3, .faq4, .faq5{
         padding:3px;
       }
 
-      .item .description{
+.item .description{
         clear:both;
         overflow:hidden;
         max-height:0;
         transition:0.5s ease;
         color:darkorange;
       }
-      .item input[type=checkbox]{
+
+.item input[type=checkbox]{
         display:none;
       }
-      .item input[type=checkbox] ~ label{
+
+.item input[type=checkbox] ~ label{
         display:block;
         float:right;
         width:2em;
@@ -168,12 +169,17 @@ label {
         font-weight:bold;
         cursor:pointer;
       }
-      .item input[type=checkbox] ~ label:hover{
+
+.item input[type=checkbox] ~ label:hover{
         background:cyan;
       }
 
-      .item input[type=checkbox]:checked ~ .description{
-        max-height:200em;
-        transition:0.5s ease;
+.item input[type=checkbox]:checked ~ .description{
+    max-height:200em;
+    transition:0.5s ease;
 
       }
+
+h2 {
+    padding-bottom: 15px;
+}
