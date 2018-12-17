@@ -8,15 +8,15 @@ body{
   background-color: rgba(255,99,71,0.7);
   padding: 35px;
   color: white;
-  margin-top: 0;
+  margin-top: 1%;
   text-align: center;
   font-weight: bold;
   font-size: 18pt;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-  font-family: 'Mali', cursive;
-  margin-left: 10%;
-  margin-right: 10%;
-}
+  margin-left: 22%;
+  margin-right: 22%;
+ }
+
 h1{
   text-align: center;
   color: rgba(255,99,71,0.7);
@@ -24,16 +24,18 @@ h1{
 
 #surrender {
   color: #000;
+  width: 55%;
    margin-right: 200px;
-   margin-left: 200px;
+   margin-left: 300px;
    text-align: center;
 }
 
 .complete1, .complete2, .complete3, .complete4  {
     background-color:white;
     color: black;
-    margin-left: 200px;
+    width: 55%;
     margin-right: 200px;
+    margin-left: 300px;
     border-radius: 4em;
     text-align: center;
 
@@ -44,8 +46,8 @@ h1{
       font-weight: bold;
       border-radius: 4em;
       padding: 0.3em;
-      margin-left: 200px;
-      margin-right: 200px;
+      margin-left: 50px;
+      margin-right: 50px;
       background-color: rgba(255,99,71,0.7);
       margin-top: 0px;
     }
@@ -60,7 +62,7 @@ h1{
 
     .wrap{
         background-color:white;
-        width:63em;
+        width:50%;
         padding:2em 2em 2em;
         margin:0 auto;
         border-radius:2em;
