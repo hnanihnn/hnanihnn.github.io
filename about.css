@@ -1,0 +1,90 @@
+/* about us */
+.section{
+  //background-image: url(cat33.jpeg);
+  background-color: white;
+  background-size: cover;
+  margin-bottom: 3%;
+  margin-left: 22%;
+  margin-right: 22%;
+  border-radius: 20px 20px 20px 20px;
+}
+
+#title{
+  margin-left: 22%;
+  margin-right: 22%;
+  font-weight: bold;
+  //font-size: 40px;
+  text-align: center;
+  background-color: #FA8072;
+  padding: 15px;
+  //width: 55%;
+  //margin-left: 21.5%;
+  color: white;
+  margin-bottom: 2%;
+}
+
+.info{
+  margin-top: 2%;
+}
+
+/* FAQ */
+.container > #title{
+  font-weight: bold;
+  //font-size: 40px;
+  text-align: center;
+  background-color: #FA8072;
+  padding: 15px;
+  width: 55%;
+  margin-left: 21.5%;
+  color: white;
+}
+
+.container > .wrap{
+    background-color:white;
+    width:50em;
+    padding: 2em 2em 1em 2em;
+    margin:0 auto;
+    border-radius:2em;
+    color:black;
+    margin-bottom: 2%;
+
+  }
+  .item{
+    border-top:solid 3px #FA8072;
+    //border-bottom:solid 1px;
+  }
+
+  .faq1, .faq2, .faq3, .faq4, .faq5, .faq6, .faq7, .faq8{
+    padding:3px;
+  }
+
+  .item .description{
+    clear:both;
+    overflow:hidden;
+    max-height:0;
+    transition:0.5s ease;
+    color:darkorange;
+  }
+  .item input[type=checkbox]{
+    display:none;
+  }
+  .item input[type=checkbox] ~ label{
+    display:block;
+    float:right;
+    width:2em;
+    height:2em;
+    background-color: #78AEA5;
+    color:#fff;
+    border-radius:0  0 50% 50%;
+    text-align:center;
+    line-height:2;
+    font-weight:bold;
+    cursor:pointer;
+  }
+  .item input[type=checkbox] ~ label:hover{
+    background:cyan;
+  }
+
+  .item input[type=checkbox]:checked ~ .description{
+    max-height:200em;
+    transition:0.5s ease;
