@@ -1,0 +1,115 @@
+/* surrender a pet */
+
+body{
+  font-family: 'Mali', cursive;
+}
+
+#title4,#titletext, #title{
+  background-color: rgba(255,99,71,0.7);
+  padding: 35px;
+  color: white;
+  margin-top: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18pt;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  font-family: 'Mali', cursive;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+h1{
+  text-align: center;
+  color: rgba(255,99,71,0.7);
+}
+
+#surrender {
+  color: #000;
+   margin-right: 200px;
+   margin-left: 200px;
+   text-align: center;
+}
+
+.complete1, .complete2, .complete3, .complete4  {
+    background-color:white;
+    color: black;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 4em;
+    text-align: center;
+
+  }
+
+  .step1, .step2 , .step3, .step4{
+      color: white;
+      font-weight: bold;
+      border-radius: 4em;
+      padding: 0.3em;
+      margin-left: 200px;
+      margin-right: 200px;
+      background-color: rgba(255,99,71,0.7);
+      margin-top: 0px;
+    }
+
+
+    .process-connector {
+        background-color: rgb(255,228,196);
+        height: 2.8em;
+        margin: auto;
+        width : 15px;
+      }
+
+    .wrap{
+        background-color:white;
+        width:50em;
+        padding:2em 2em 2em;
+        margin:0 auto;
+        border-radius:2em;
+        color:black;
+
+      }
+      .item{
+        border-top:solid 3px #FA8072;
+        border-bottom:solid 1px;
+      }
+
+      .faq1, .faq2, .faq3, .faq4, .faq5{
+        padding:3px;
+      }
+
+      .item .description{
+        clear:both;
+        overflow:hidden;
+        max-height:0;
+        transition:0.5s ease;
+        color:darkorange;
+      }
+      .item input[type=checkbox]{
+        display:none;
+      }
+      .item input[type=checkbox] ~ label{
+        display:block;
+        float:right;
+        width:2em;
+        height:2em;
+        background-color: #78AEA5;
+        color:#fff;
+        border-radius:0  0 50% 50%;
+        text-align:center;
+        line-height:2;
+        font-weight:bold;
+        cursor:pointer;
+      }
+      .item input[type=checkbox] ~ label:hover{
+        background:cyan;
+      }
+
+      .item input[type=checkbox]:checked ~ .description{
+        max-height:200em;
+        transition:0.5s ease;
+
+      }
+
+      mark {
+        background-color: #CCFFFF;
+        color: black;
+      }
