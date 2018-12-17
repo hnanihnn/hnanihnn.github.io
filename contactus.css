@@ -10,8 +10,8 @@ body{
  font-weight: bold;
  font-size: 18pt;
  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
- margin-left: 10%;
- margin-right: 10%;
+ margin-left: 20%;
+ margin-right: 20%;
 }
 
 h2{
@@ -37,7 +37,7 @@ h2{
   border-collapse: collapse;
 }
  th {
-  background: #ccc;
+  background: #D3D3D3;
 }
 
 th, td {
@@ -46,7 +46,7 @@ th, td {
 }
 
 tr:nth-child(even) {
-  background: #efefef;
+  background:	#FFC0CB;
 }
 
 tr:hover {
@@ -57,16 +57,16 @@ tr:hover {
 
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 60%;
   color: black;
-  background-color: rgb(255,218,185);
+  background-color: white;
   text-align: center;
 
 }
 
 #contactform{
   margin-left: 400px;
-  width: 600px;
+  width: 500px;
   height: auto;
   text-align: center;
 
@@ -116,7 +116,7 @@ tr:hover {
   }
   .contactform {
 
-    max-width: 77%;
+    max-width: 57%;
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
@@ -128,8 +128,9 @@ tr:hover {
           display: block;
           margin-left: auto;
           margin-right: auto;
-          width: 80%;
+          width: 60%;
           height: 400px;
 
         }
+
 
