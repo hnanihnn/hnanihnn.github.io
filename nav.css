@@ -91,6 +91,7 @@ li.dropdown {
 }
 
 #footer{
+  text-align:right;
   background-color:#ffffb3;
   color: black;
   position: absolute;
