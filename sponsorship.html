@@ -117,7 +117,7 @@
 
 <p id="title1">Payment Information</p>
 
-  <form action="#"  method="post">
+  <form action="#"  method="post" onsubmit="return false">
     <div class="container">
         <h3>Billing Address</h3>
         <div class="row">
@@ -211,7 +211,7 @@
 </center>
 <script>
 function myForm() {
-        // this line prevents the normal behaviour of the form (ie: reloading the page with form data sent as POST data)
+        
         var x = document.getElementById("add").value;
         var y = document.getElementById("state").value;
         var z = document.getElementById("country").value;
